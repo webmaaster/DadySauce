@@ -1,1 +1,5 @@
 # DadySauce
+
+#Read
+#Understand
+#PracticePracticePractice

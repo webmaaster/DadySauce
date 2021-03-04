@@ -1,0 +1,60 @@
+<% if current_user %>
+  <h2>wellcome <%= current_user.name %>
+  </h2>
+  <% end %>
+    <h1>Loging</h1>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <form action="/sessions" method="post">
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+          <div class='form-group'>
+            <input type="email" name="user[email]" value="" class="form-control" placeholder=" email">
+          </div>
+          <div class='form-group'>
+            <input type="password" name="user[password]" value="" class="form-control" placeholder=" password">
+          </div>
+          <input type="submit" name="" value="login" class='btn btn-primary'>
+        </form>
+      </div>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Registration form</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <form action="/users" method="post" class="form">
+          <div class='form-group'>
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" class='form-control'>
+          </div>
+          <div class='form-group'>
+            <input type="text" name="user[name]" value="" class="form-control" placeholder="First name">
+          </div>
+          <div class='form-group'>
+            <input type="email" name="user[email]" value="" class="form-control" placeholder=" email">
+          </div>
+          <div class='form-group'>
+            <input type="password" name="user[password]" value="" class="form-control" placeholder=" password">
+          </div>
+          <div class='form-group'>
+            <input type="password" name="user[password_confirmation]" value="" class="form-control"
+              placeholder="password confirmation">
+            <div class='form-group'>
+              <button class="btn btn-primary" type='submit'>Register</button>
+            </div>
+        </form>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+
+
+
+
+
+
+    
